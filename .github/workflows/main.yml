@@ -40,6 +40,7 @@ jobs:
         mypy flask_limiter
   test:
     runs-on: ubuntu-latest
+    name: Test (Python ${{ matrix.python-version }}, Flask ${{matrix.flask-version}})
     strategy:
       fail-fast: false
       matrix:
